@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get install python3 python3-pip git -y
-git clone https://github.com/dinisusmc/automated_deployment.git
-cd automated_deployment/
+git clone https://github.com/dinisusmc/multi_service_automation.git
+cd multi_service_automation/
 sudo pip3 install -r requirements.txt
-sudo python3 todolist.py
+sudo python3 backend.py & sudo python todolist.py

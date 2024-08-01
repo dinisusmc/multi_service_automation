@@ -2,12 +2,9 @@
 from flask import Flask, render_template, redirect, g, request, url_for
 import requests
 
-#ip = requests.get('https://checkip.amazonaws.com').text.strip()+":5000"
+ip = requests.get('https://checkip.amazonaws.com').text.strip()+":5001"
 
 app = Flask(__name__)
-
-######
-ip = "localhost:5001"
 
 @app.route("/")
 def show_list():
